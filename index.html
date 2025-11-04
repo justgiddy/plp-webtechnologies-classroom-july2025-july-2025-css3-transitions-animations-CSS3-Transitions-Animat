@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Interactive Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Animation Gallery</h1>
+      <button id="themeToggle" class="theme-btn">Switch Theme</button>
+    </header>
+
+    <main>
+      <!-- Part 1: CSS Animations Demo -->
+      <section class="animation-demo">
+        <h2>Pure CSS Animations</h2>
+        <div class="animation-container">
+          <div class="floating-box"></div>
+          <div class="pulse-circle"></div>
+          <div class="sliding-bar"></div>
+        </div>
+      </section>
+
+      <!-- Part 2: Interactive Cards with JS Functions -->
+      <section class="cards-section">
+        <h2>Interactive Cards</h2>
+        <div class="cards-container">
+          <div class="card" data-color="blue">
+            <div class="card-front">
+              <h3>Hover Me!</h3>
+              <p>See what happens</p>
+            </div>
+            <div class="card-back">
+              <h3>Cool Effect!</h3>
+              <p>Click to change color</p>
+            </div>
+          </div>
+          <div class="card" data-color="green">
+            <div class="card-front">
+              <h3>Flip Me!</h3>
+              <p>There's more</p>
+            </div>
+            <div class="card-back">
+              <h3>Amazing!</h3>
+              <p>Try clicking</p>
+            </div>
+          </div>
+          <div class="card" data-color="purple">
+            <div class="card-front">
+              <h3>Interactive</h3>
+              <p>Discover more</p>
+            </div>
+            <div class="card-back">
+              <h3>Wonderful!</h3>
+              <p>Keep exploring</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 3: Combined CSS & JS Animations -->
+      <section class="interactive-animation">
+        <h2>Animation Control Panel</h2>
+        <div class="control-panel">
+          <div class="animation-box" id="animationBox">
+            <div class="animated-element"></div>
+          </div>
+          <div class="controls">
+            <button class="control-btn" data-animation="rotate">Rotate</button>
+            <button class="control-btn" data-animation="bounce">Bounce</button>
+            <button class="control-btn" data-animation="shake">Shake</button>
+            <button class="control-btn" data-animation="scale">Scale</button>
+          </div>
+          <div class="animation-settings">
+            <label for="animationSpeed">Animation Speed:</label>
+            <input
+              type="range"
+              id="animationSpeed"
+              min="0.5"
+              max="2"
+              step="0.1"
+              value="1"
+            />
+            <span id="speedValue">1x</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Loading Animation Demo -->
+      <section class="loading-demo">
+        <h2>Loading Animation</h2>
+        <button id="toggleLoading" class="load-btn">Start Loading</button>
+        <div class="loader-container">
+          <div class="loader"></div>
+          <p class="loading-text">Loading...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Click anywhere on the page for a surprise ripple effect!</p>
+    </footer>
+
+    <div id="ripple-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
